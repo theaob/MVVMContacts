@@ -15,7 +15,7 @@
     <apexControls:PaddedGrid Rows="Auto,Auto,Auto" Columns="*,2*" Padding="4">
         <!-- The Name label and textbox. -->
         <Label Grid.Row="0" Grid.Column="0" Content="Name" />
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Name}"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Name}" Name="textBoxName"/>
         
         <!-- The Birthday label and textbox. -->
         <Label Grid.Row="1" Grid.Column="0" Content="Birthday" />

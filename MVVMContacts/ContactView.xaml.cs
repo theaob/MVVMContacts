@@ -16,5 +16,10 @@ namespace MVVMContacts
         {
             InitializeComponent();
         }
+
+        public void FocusContactName()
+        {
+            textBoxName.Focus();
+        }
     }
 }
