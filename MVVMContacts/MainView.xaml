@@ -9,7 +9,7 @@
              xmlns:apexControls="clr-namespace:Apex.Controls;assembly=Apex"
              xmlns:apexConverters="clr-namespace:Apex.Converters;assembly=Apex"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="500" d:DesignWidth="600">
     
     
     <!-- The View creates its own ViewModel, so set the ViewModel 
@@ -18,16 +18,18 @@
         <local:MainViewModel x:Name="viewModel" />
     </apexMVVM:View.ViewModel>
             
-    <apexControls:ApexGrid Columns="*,2*">
+    <apexControls:ApexGrid Columns="*,2*" Rows="*,Auto">
         
         <!-- The list of contacts -->
         <ListBox Grid.Column="0" 
                  ItemsSource="{Binding Contacts}" 
                  DisplayMemberPath="Name"
+                 Grid.RowSpan="2"
                  SelectedItem="{Binding SelectedContact}" />
         
         <!-- A contact view - bound to the selected contact -->
-        <local:ContactView Grid.Column="1" 
+        <local:ContactView x:Name="contactView"
+                           Grid.Column="1" 
                            DataContext="{Binding SelectedContact}" />
         
         <!-- A stack panel to hold buttons -->

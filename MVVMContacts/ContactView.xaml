@@ -12,7 +12,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     
             
-    <apexControls:PaddedGrid Rows="Auto,Auto" Columns="*,2*" Padding="4">
+    <apexControls:PaddedGrid Rows="Auto,Auto,Auto" Columns="*,2*" Padding="4">
         <!-- The Name label and textbox. -->
         <Label Grid.Row="0" Grid.Column="0" Content="Name" />
         <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Name}"/>
