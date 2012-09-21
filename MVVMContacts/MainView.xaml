@@ -37,7 +37,7 @@
                     HorizontalAlignment="Right">
             
             <!-- A button to allow a new contact to be added -->
-            <Button Width="120" Margin="4" Content="Add New Contact" />
+            <Button Width="120" Margin="4" Content="Add New Contact" Command="{Binding AddContactCommand}" />
             
             <!-- A button to allow a contact to be deleted -->
             <Button Width="120" Margin="4" Content="Delete Contact" />

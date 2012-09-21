@@ -22,9 +22,11 @@ namespace MVVMContacts
             //      apexnp - Creates a Notifying Property
             //      apexc - Creates a Command.
 
-            Contacts.Add(new ContactViewModel() { Name = "Homer" });
+            AddContactCommand = new Command(DoAddContactCommand);
+
+            /*Contacts.Add(new ContactViewModel() { Name = "Homer" });
             Contacts.Add(new ContactViewModel() { Name = "Marge" });
-            Contacts.Add(new ContactViewModel() { Name = "Maggie" });
+            Contacts.Add(new ContactViewModel() { Name = "Maggie" });*/
         }
 
 
@@ -35,6 +37,14 @@ namespace MVVMContacts
         /// <param name="parameter">The AddContact command parameter.</param>
         private void DoAddContactCommand(object parameter)
         {
+            ContactViewModel newContact = new ContactViewModel()
+            {
+                Name = "New Contact"
+            };
+
+            Contacts.Add(newContact);
+
+            SelectedContact = newContact;
         }
 
         /// <summary>
