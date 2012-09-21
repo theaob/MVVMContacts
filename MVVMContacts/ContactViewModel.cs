@@ -58,5 +58,22 @@ namespace MVVMContacts
             set { SetValue(BirthdayProperty, value); }
         }
 
+        
+        /// <summary>
+        /// The NotifyingProperty for the EmailAddress property.
+        /// </summary>
+        private readonly NotifyingProperty EmailAddressProperty =
+          new NotifyingProperty("EmailAddress", typeof(string), default(string));
+
+        /// <summary>
+        /// Gets or sets EmailAddress.
+        /// </summary>
+        /// <value>The value of EmailAddress.</value>
+        public string EmailAddress
+        {
+            get { return (string)GetValue(EmailAddressProperty); }
+            set { SetValue(EmailAddressProperty, value); }
+        }
+
     }
 }
