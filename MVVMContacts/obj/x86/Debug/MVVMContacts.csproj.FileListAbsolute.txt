@@ -15,3 +15,5 @@ c:\users\test pc1\documents\visual studio 2010\Projects\MVVMContacts\MVVMContact
 c:\users\test pc1\documents\visual studio 2010\Projects\MVVMContacts\MVVMContacts\obj\x86\Debug\GenerateResource.write.1.tlog
 c:\users\test pc1\documents\visual studio 2010\Projects\MVVMContacts\MVVMContacts\obj\x86\Debug\MVVMContacts.exe
 c:\users\test pc1\documents\visual studio 2010\Projects\MVVMContacts\MVVMContacts\obj\x86\Debug\MVVMContacts.pdb
+c:\users\test pc1\documents\visual studio 2010\Projects\MVVMContacts\MVVMContacts\obj\x86\Debug\ContactView.g.cs
+c:\users\test pc1\documents\visual studio 2010\Projects\MVVMContacts\MVVMContacts\obj\x86\Debug\ContactView.baml

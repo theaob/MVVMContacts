@@ -21,11 +21,14 @@
     <apexControls:ApexGrid Columns="*,2*">
         
         <!-- The list of contacts -->
-        <ListBox Grid.Column="0" ItemsSource="{Binding Contacts}" DisplayMemberPath="Name"
+        <ListBox Grid.Column="0" 
+                 ItemsSource="{Binding Contacts}" 
+                 DisplayMemberPath="Name"
                  SelectedItem="{Binding SelectedContact}" />
         
         <!-- A contact view - bound to the selected contact -->
-        <local:ContactView Grid.Column="1" DataContext="{Binding SelectedContact}" />
+        <local:ContactView Grid.Column="1" 
+                           DataContext="{Binding SelectedContact}" />
         
     </apexControls:ApexGrid>
 </UserControl>
