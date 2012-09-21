@@ -23,6 +23,7 @@ namespace MVVMContacts
             //      apexc - Creates a Command.
 
             AddContactCommand = new Command(DoAddContactCommand);
+            DeleteContactCommand = new Command(DoDeleteContactCommand, false);
 
             /*Contacts.Add(new ContactViewModel() { Name = "Homer" });
             Contacts.Add(new ContactViewModel() { Name = "Marge" });
@@ -30,6 +31,28 @@ namespace MVVMContacts
         }
 
 
+
+
+        /// <summary>
+        /// Performs the DeleteContact command.
+        /// </summary>
+        /// <param name="parameter">The DeleteContact command parameter.</param>
+        private void DoDeleteContactCommand(object parameter)
+        {
+            Contacts.Remove(SelectedContact);
+
+            SelectedContact = null;
+        }
+
+        /// <summary>
+        /// Gets the DeleteContact command.
+        /// </summary>
+        /// <value>The value of .</value>
+        public Command DeleteContactCommand
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
         /// Performs the AddContact command.
@@ -88,7 +111,11 @@ namespace MVVMContacts
         public ContactViewModel SelectedContact
         {
             get { return (ContactViewModel)GetValue(SelectedContactProperty); }
-            set { SetValue(SelectedContactProperty, value); }
+            set { 
+                SetValue(SelectedContactProperty, value);
+
+                DeleteContactCommand.CanExecute = value != null;
+            }
         }
 
     }

@@ -40,7 +40,7 @@
             <Button Width="120" Margin="4" Content="Add New Contact" Command="{Binding AddContactCommand}" />
             
             <!-- A button to allow a contact to be deleted -->
-            <Button Width="120" Margin="4" Content="Delete Contact" />
+            <Button Width="120" Margin="4" Content="Delete Contact" Command="{Binding DeleteContactCommand}" />
             
         </StackPanel>
         
