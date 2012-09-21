@@ -21,5 +21,9 @@
         <Label Grid.Row="1" Grid.Column="0" Content="Birthday" />
         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Birthday}" />
         
+        <!-- The Email Address label and textbox. -->
+        <Label Grid.Row="2" Grid.Column="0" Content="Email Address" />
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding EmailAddress}" />
+        
     </apexControls:PaddedGrid>
 </UserControl>
