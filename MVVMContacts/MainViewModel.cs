@@ -27,6 +27,26 @@ namespace MVVMContacts
             Contacts.Add(new ContactViewModel() { Name = "Maggie" });
         }
 
+
+
+        /// <summary>
+        /// Performs the AddContact command.
+        /// </summary>
+        /// <param name="parameter">The AddContact command parameter.</param>
+        private void DoAddContactCommand(object parameter)
+        {
+        }
+
+        /// <summary>
+        /// Gets the AddContact command.
+        /// </summary>
+        /// <value>The value of .</value>
+        public Command AddContactCommand
+        {
+            get;
+            private set;
+        }
+
         
         /// <summary>
         /// The Contacts observable collection.
