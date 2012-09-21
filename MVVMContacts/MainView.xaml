@@ -30,5 +30,17 @@
         <local:ContactView Grid.Column="1" 
                            DataContext="{Binding SelectedContact}" />
         
+        <!-- A stack panel to hold buttons -->
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            
+            <!-- A button to allow a new contact to be added -->
+            <Button Width="120" Margin="4" Content="Add New Contact" />
+            
+            <!-- A button to allow a contact to be deleted -->
+            <Button Width="120" Margin="4" Content="Delete Contact" />
+            
+        </StackPanel>
+        
     </apexControls:ApexGrid>
 </UserControl>
